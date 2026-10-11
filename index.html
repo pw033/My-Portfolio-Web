@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e70a0c1bf8.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Md Altamash</span> <br> From India</h1>
+
+        </div>
+    </div>
+ </div>
+ <!-- --------------about--------------- -->
+  <div id="about">
+    <div class="contaner">
+        <div class="row">
+           <div class="about-col-1">
+                 <img src="images/user.png">
+           </div>
+           <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas ipsam laborum aliquam culpa illo quidem labore! Nulla tempora ex corrupti obcaecati voluptates vitae esse labore non, tenetur consectetur facere.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+ 
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App interface</li>
+                        <li><span>Web Development</span><br>Designing Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App interface</li>
+                        <li><span>Web Development</span><br>Designing Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App interface</li>
+                        <li><span>Web Development</span><br>Designing Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ---------------------services--------------------- -->
+
+  <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+           <div>
+         <i class="fa-solid fa-code" style="font-size: 50px; margin-bottom: 30px;"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt rerum vero aliquam placeat earum ab eveniet reprehenderit, facere distinctio. At natus accusantium modi fugit nisi, nesciunt dicta porro architecto.</p>
+            <a href="#">Learn more</a>
+           </div>
+           <div>
+           <i class="fa-solid fa-crop-simple" style="font-size: 50px;  margin-bottom: 30px;"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt rerum vero aliquam placeat earum ab eveniet reprehenderit, facere distinctio. At natus accusantium modi fugit nisi, nesciunt dicta porro architecto.</p>
+            <a href="#">Learn more</a>
+           </div>
+           <div>
+            <i class="fa-brands fa-app-store" style="font-size: 50px;  margin-bottom: 30px;"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt rerum vero aliquam placeat earum ab eveniet reprehenderit, facere distinctio. At natus accusantium modi fugit nisi, nesciunt dicta porro architecto.</p>
+            <a href="#">Learn more</a>
+           </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- ..................portfolio............... -->
+    <div id="portfolio">
+       <div class="container">
+          <h1 class="sub-title">My work</h1>
+          <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you the talented people around the world.Download it from play store</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you the talented people around the world.Download it from play store</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you the talented people around the world.Download it from play store</p>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+       </div>
+    </div>
+<!-- ..................contact.......................... -->
+
+   <div id="contact"></div>
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><i class="fa-solid fa-paper-plane"></i> mdaltamash9593@gmail.com</p>
+               <p><i class="fa-solid fa-phone"></i> 8298326987</p>
+               <div class="social-icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+               </div>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                 <input type="email" name="email" placeholder="Your Email" required>
+                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                 <button type="submit">Submit</button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+
+<script>
+   var tablinks= document.getElementsByClassName("tab-links");
+   var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab")
+
+    }
+
+
+
+</script>
+
+
+
+</body>
+</html>
