@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/e70a0c1bf8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     </head>
 <body>
     <div id="header">
@@ -24,8 +27,9 @@
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>UI/UX Designer</p>
-            <h1>Hi, I'm <span>Md Altamash</span> <br> From India</h1>
+            <h2>Java FullStack <br> <em>Developer </em></h2>
+            <p> <em>AI Enthusiast</em> !</p>
+            <h1>Hi, I'm <br> <span>Md Altamash</span> <br> From India !</h1>
 
         </div>
     </div>
@@ -39,8 +43,25 @@
            </div>
            <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas ipsam laborum aliquam culpa illo quidem labore! Nulla tempora ex corrupti obcaecati voluptates vitae esse labore non, tenetur consectetur facere.</p>
-
+                <p>
+                Hello! I'm a passionate, enthusiastic, and dedicated Java Full Stack Developer with a strong interest in software development, web technologies, and Artificial Intelligence. I love transforming creative ideas into innovative digital solutions and building applications that are not only visually appealing but also functional, responsive, and user-friendly.
+                <br><br>
+                I have a keen interest in developing both frontend and backend applications. My development journey revolves around learning modern technologies, writing clean and efficient code, solving real-world problems, and continuously improving my technical skills.
+                <br><br>
+                On the frontend, I enjoy creating attractive and responsive user interfaces using HTML, CSS, JavaScript, and other modern web technologies. On the backend, I focus on building application logic, handling data, and developing scalable solutions using Java and related technologies.
+                <br><br>
+                Apart from web development, I am also deeply interested in Artificial Intelligence (AI) and exploring how emerging technologies can make applications smarter, more efficient, and more useful. I believe that technology has the power to solve complex problems and create meaningful experiences.
+                <br><br>
+                My goal is to become a skilled and successful Full Stack Developer, contribute to innovative projects, collaborate with talented people, and continuously grow in the ever-evolving world of technology. <br><br>
+                I believe in three things:
+                <br>
+                <ul class="about-list">
+                    <li>Continuous Learning – Always exploring and learning new technologies. <br></li>
+                     <li>Creative Thinking – Turning ideas into practical and innovative solutions. <br></li>
+                     <li>Smart Development – Writing clean, efficient, and maintainable code. <br></li>
+                </ul>
+                <br>
+                Welcome to my portfolio! Feel free to explore my projects, discover my skills, and connect with me. I'm always open to learning opportunities, collaborations, and exciting new challenges.</p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links"onclick="opentab('experience')">Experience</p>
@@ -49,9 +70,10 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>UI?UX</span><br>Designing Web/App interface</li>
-                        <li><span>Web Development</span><br>Designing Web app Development</li>
-                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        <li><span>Java</span><br>Core Java, Spring, Hibernate</li>
+                        <li><span>Web Development</span><br>HTML, CSS, JavaScript, React</li>
+                        <li><span>Database</span><br>MySQL, MongoDB</li>
+                        <li><span>Artificial Intelligence</span><br>Machine Learning, Deep Learning</li>   
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
@@ -69,9 +91,28 @@
                     </ul>
                 </div>
            </div>
-        </div>
-    </div>
-  </div>
+         </div>
+         <div class="about-highlights">
+            <div class="highlight">
+                <i class="fa-solid fa-code"></i>
+                <h3>Java Full Stack</h3>
+                <p>Developer</p>
+            </div>
+
+            <div class="highlight">
+                <i class="fa-solid fa-brain"></i>
+                <h3>AI Enthusiast</h3>
+                <p>Technology Lover</p>
+            </div>
+
+            <div class="highlight">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Problem Solver</h3>
+                <p>Creative Thinker</p>
+            </div>
+         </div>
+       </div>
+     </div>
 
   <!-- ---------------------services--------------------- -->
 
@@ -84,57 +125,266 @@
             <h2>Web Design</h2>
            <p>I create modern, attractive, and user-friendly websites that bring your ideas to life. My focus is on clean designs, smooth navigation, and responsive layouts that look great on mobile, tablet, and desktop.
           </p>
-            <a href="#">Learn more</a>
+           <a href="#webModal" onclick="openWebModal(); return false;">Learn more</a>
            </div>
            <div>
            <i class="fa-solid fa-crop-simple" style="font-size: 50px;  margin-bottom: 30px;"></i>
             <h2>UI/UX Design</h2>
             <p>I design clean, intuitive, and user-friendly interfaces that make websites easy to navigate and enjoyable to use. My goal is to create visually appealing designs that deliver a smooth and seamless user experience.</p>
-            <a href="#">Learn more</a>
+            <a href="#uiuxModal" onclick="openUiuxModal(); return false;">Learn more</a>
            </div>
            <div>
             <i class="fa-brands fa-app-store" style="font-size: 50px;  margin-bottom: 30px;"></i>
             <h2>App Design</h2>
             <p>I design modern, intuitive, and visually appealing mobile app interfaces that provide a smooth and engaging user experience. My focus is on creating user-friendly layouts with easy navigation and responsive designs that make apps simple and enjoyable to use.</p>
-            <a href="#">Learn more</a>
+            <a href="#appModal" onclick="openAppModal(); return false;">Learn more</a>
            </div>
         </div>
       </div>
   </div>
 
+
+
+  <!-- ..............learn more....... -->
+   <div id="webModal" class="service-modal">
+    <div class="modal-content">
+
+        <span class="close-modal" onclick="closeWebModal()">&times;</span>
+
+        <i class="fa-solid fa-code modal-icon"></i>
+
+        <h2>Web Design & Development</h2>
+
+        <p>
+            I create modern, responsive, and professional websites
+            that help businesses and individuals build a strong
+            online presence with attractive designs and powerful functionality.
+        </p>
+
+        <h3>What I Offer</h3>
+
+        <ul>
+            <li>Responsive Website Development</li>
+            <li>Personal Portfolio Websites</li>
+            <li>Business & Landing Page Design</li>
+            <li>Java Backend Development</li>
+            <li>Database Integration</li>
+            <li>Website Optimization</li>
+        </ul>
+
+        <h3>Technologies</h3>
+
+        <div class="tech-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>MySQL</span>
+        </div>
+
+        <a href="#contact" class="modal-contact" onclick="closeWebModal()">
+            Contact Me
+        </a>
+
+    </div>
+</div>
+
+
+<div id="uiuxModal" class="service-modal">
+    <div class="modal-content">
+
+        <span class="close-modal" onclick="closeUiuxModal()">&times;</span>
+
+        <i class="fa-solid fa-pen-ruler modal-icon"></i>
+
+        <h2>UI/UX Design</h2>
+
+        <p>
+            I design clean, modern, and intuitive user interfaces
+            that make websites and applications easy to navigate.
+            My focus is on creating visually appealing designs
+            with a smooth and enjoyable user experience.
+        </p>
+
+        <h3>What I Offer</h3>
+
+        <ul>
+            <li>User Interface (UI) Design</li>
+            <li>User Experience (UX) Design</li>
+            <li>Website Layout Design</li>
+            <li>Mobile-Friendly Interfaces</li>
+            <li>Color & Typography Selection</li>
+            <li>Wireframing & Prototyping</li>
+        </ul>
+
+        <h3>Tools & Technologies</h3>
+
+        <div class="tech-tags">
+            <span>Figma</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive Design</span>
+        </div>
+
+        <a href="#contact" class="modal-contact" onclick="closeUiuxModal()">
+            Contact Me
+        </a>
+
+    </div>
+</div>
+
+<div id="appModal" class="service-modal">
+    <div class="modal-content">
+
+        <span class="close-modal" onclick="closeAppModal()">&times;</span>
+
+        <i class="fa-brands fa-android modal-icon"></i>
+
+        <h2>App Design & Development</h2>
+
+        <p>
+            I create modern, interactive, and user-friendly mobile
+            application experiences. My goal is to develop applications
+            with attractive interfaces, smooth navigation, and useful
+            features that solve real-world problems.
+        </p>
+
+        <h3>What I Offer</h3>
+
+        <ul>
+            <li>Android Application Development</li>
+            <li>Mobile App UI Design</li>
+            <li>Interactive App Interfaces</li>
+            <li>User-Friendly Navigation</li>
+            <li>Backend Development</li>
+            <li>Database Integration</li>
+        </ul>
+
+        <h3>Technologies</h3>
+
+        <div class="tech-tags">
+            <span>Java</span>
+            <span>Android Studio</span>
+            <span>XML</span>
+            <span>MySQL</span>
+            <span>Firebase</span>
+        </div>
+
+        <a href="#contact" class="modal-contact" onclick="closeAppModal()">
+            Contact Me
+        </a>
+
+    </div>
+</div>
+
+
   <!-- ..................portfolio............... -->
     <div id="portfolio">
-       <div class="container">
-          <h1 class="sub-title">My work</h1>
-          <div class="work-list">
+    <div class="container">
+
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="work-list">
+
+            <!-- Project 1 -->
             <div class="work">
-                <img src="images\MaisonCafePic.jpeg">
+                <img src="images/MaisonCafePic.jpeg">
                 <div class="layer">
                     <h3>Maison Cafe Website</h3>
-                    <p>Maison Café is a stylish and elegant café website designed to showcase delicious coffee, tasty snacks, and a warm café atmosphere. Featuring a modern design, beautiful visuals, and a user-friendly experience.</p>
-                    <a href="https://maison-cafe-taupe.vercel.app/" title="Maison Cafe Web"><i class="fa-solid fa-link"></i></a>
+                    <p>
+                        Maison Café is a stylish and elegant café website
+                        designed to showcase delicious coffee, tasty snacks,
+                        and a warm café atmosphere.
+                    </p>
+                    <a href="https://maison-cafe-taupe.vercel.app/" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
                 </div>
             </div>
+
+            <!-- Project 2 -->
             <div class="work">
-                <img src="images\AltronMusicApp.jpeg">
+                <img src="images/AltronMusicApp.jpeg">
                 <div class="layer">
                     <h3>Altron Music App</h3>
-                    <p>Altron Music App is a modern and feature-rich application designed for music lovers. It offers a seamless listening experience with a vast library of songs and personalized playlists.</p>
-                    <a href="https://altron-music-app.vercel.app/" title="Altron Music App"><i class="fa-solid fa-link"></i></a>
+                    <p>
+                        A modern music application designed for music lovers
+                        with songs, playlists, and a seamless listening experience.
+                    </p>
+                    <a href="https://altron-music-app.vercel.app/" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
                 </div>
             </div>
+
+            <!-- Project 3 -->
             <div class="work">
                 <img src="images/work-3.png">
                 <div class="layer">
                     <h3>Online Shopping App</h3>
-                    <p>The app connects you the talented people around the world.Download it from play store</p>
-                    <a href=""><i class="fa-solid fa-link"></i></a>
+                    <p>
+                        An online shopping application with a modern interface
+                        and user-friendly shopping experience.
+                    </p>
+                    <a href="#" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
                 </div>
             </div>
-          </div>
-          <a href="#" class="btn">See more</a>
-       </div>
+
+            <!-- HIDDEN PROJECTS -->
+
+            <div class="work extra-work">
+                <img src="images/AltronMusicApp.jpeg">
+                <div class="layer">
+                    <h3>Student Management System</h3>
+                    <p>
+                        A Java-based student management system designed
+                        to manage student records and academic information.
+                    </p>
+                    <a href="#">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="work extra-work">
+                <img src="images/AltronMusicApp.jpeg">
+                <div class="layer">
+                    <h3>Weather Application</h3>
+                    <p>
+                        A responsive weather application that displays
+                        weather information with a clean interface.
+                    </p>
+                    <a href="#">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="work extra-work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>AI Chatbot</h3>
+                    <p>
+                        An AI-powered chatbot concept designed to provide
+                        intelligent responses and interactive conversations.
+                    </p>
+                    <a href="#">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="btn" id="seeMoreBtn" onclick="toggleProjects()">
+            See More
+        </button>
+
     </div>
+</div>
+      
 <!-- ..................contact.......................... -->
 
    <div id="contact">
@@ -162,65 +412,14 @@
             <span id="msg"></span>
             </div>
          </div>
-      </div>
-       <div class="copyright">
-        <p>Copyright © Altamash. Made with <i class="fa-solid fa-heart heart-icon" ></i> by Easy Tutorials</p>
+        </div>
+       <div class="footer-content">
+        <p>&copy; 2026 Altamash.Crafted with <i class="fa-solid fa-heart heart-icon" ></i> and passion for clean code & creative ideas.</p>
+        <a href="#header" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+        Back to Top
+        </a>
        </div>
-
-   </div>
-
-
-<script>
-   var tablinks= document.getElementsByClassName("tab-links");
-   var tabcontents= document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-         for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-         }
-         event.currentTarget.classList.add("active-link");
-         document.getElementById(tabname).classList.add("active-tab")
-      }
-</script>
-
-<!-- ---------------------script for small screen------------------ -->
-<script>
-
-var sidemeu = document.getElementById("sidemenu");
-
-function openmenu(){
-   sidemeu.style.right="0";
-}
-
-function closemenu(){
-   sidemeu.style.right="-200px";
-}
-
-</script>
-
-<script>
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbwsXbAEhnXkJXVmXGVpCxJVMm8WvelZZxaX0qeqCtTmZSW6U_3lHl_B-zTxX4hCDsiBxg/exec'
-	const form = document.forms['YOUR_FORM_NAME']
-    const msg = document.getElementById('msg')
-
-	form.addEventListener('submit', e => {
-		e.preventDefault()
-		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-			.then(response => response.json())
-			.then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                  msg.innerHTML = "" 
-                },5000)
-                form.reset()
-            })
-			.catch(error => console.error('Error!', error.message))
-	})
-</script>
-
-
-
+    </div>
 </body>
 </html>
