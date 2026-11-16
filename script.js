@@ -13,15 +13,21 @@ function opentab(tabname){
       }
 
 //  ---------------------script for small screen------------------
-var sidemeu = document.getElementById("sidemenu");
+// SIDE MENU
+document.addEventListener("DOMContentLoaded", function () {
 
-function openmenu(){
-   sidemeu.style.right="0";
-}
+    var sidemeu = document.getElementById("sidemenu");
 
-function closemenu(){
-   sidemeu.style.right="-200px";
-}
+    window.openmenu = function () {
+        sidemeu.style.right = "0px";
+    }
+
+    window.closemenu = function () {
+        sidemeu.style.right = "-200px";
+    }
+
+});
+
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwsXbAEhnXkJXVmXGVpCxJVMm8WvelZZxaX0qeqCtTmZSW6U_3lHl_B-zTxX4hCDsiBxg/exec'
         const form = document.forms['YOUR_FORM_NAME']
         const msg = document.getElementById('msg')
