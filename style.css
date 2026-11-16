@@ -660,6 +660,17 @@ nav .fa-bars {
         flex-direction: column;
         text-align: center;
     }
+    .btp{
+        display: none;
+    }
+    .back-to-top {
+      margin-top: 32px;
+    }
+
+    .back-to-top:hover {
+     background: #ff004f;
+    }
+
 }
 #msg{
     color: #61b752;
